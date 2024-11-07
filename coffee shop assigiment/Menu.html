@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="coffee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="image/images.jpg">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <img class="logo" src="image/images.jpg" alt="logo">
+                <figcaption id="figcaption">Bean Boutique<br> Coffee Shop</figcaption>
+                <ul id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Menu.html">Coffee Selection</a></li>
+                    <li><a href="Equipment.html">Brewing Equipment</a></li>
+                    <li><a href="Events.html">Events & Workshops</a></li>
+                    <li><a href="Promotion.html">Special Offers</a></li>
+                    <li><a href="Cart.html">Shopping Cart</a></li>
+                </ul>
+                
+                <div id="searchbox">
+                    <input type="text" id="search" name="search" placeholder="Search..">
+                </div>
+            </nav>
+            <section class="intro-menu">
+                <div class="intro-menucontent">
+                    <h1>Leadies and Gentlemen</h1>
+                    <p>If you looking for best quality coffee, I'm sure that you will find in the following.</p>
+                </div>
+            </section>
+        </div>
+    </header><br>
+
+    <section class="coffee-section">
+        <div class="coffee-grid">
+            <div class="coffee">
+                <img src="image/Cappuccino.jpg" alt="cappuccino">
+                <h3>Cappuccino</h3>
+                <p class="description">A cappuccino is the perfect balance of espresso, steamed milk and foam.</p>
+                <p class="price">$13.0</p>
+                <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+            </div>
+            <div class="coffee">
+                <img src="image/americano.png" alt="americano">
+                <h3>Americano</h3>
+                <p class="description">An americano is simply just hot water and espresso.</p>
+                <p class="price">$13.2</p>
+                <button onclick="window.location.href='Cart.html';" class="botton-container">Add to Cart</button>
+            </div>
+            <div class="coffee">
+                <img src="image/black-coffee.jpg">
+                <h3>Black Coffee</h3>
+                <p class="description">Black coffee is a popular hot coffee drink consisting of ground coffee and water and can be prepared using different brewing methods.</p>
+                <p class="price">$10.5</p>
+                <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+            </div>
+            <div class="coffee">
+                <img src="image/espresso.jpg" alt="espresso">
+                <h3>Espresso</h3>
+                <p class="description">espresso contains 29 to 100 milligrams of caffeine in a single shot.</p>
+                <p class="price">$14.0</p>
+                <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+            </div>
+            <div class="coffee">
+                <img src="image/irish-coffee.jpg" alt="irish-coffee">
+                <h3>Irish Coffee</h3>
+                <p class="description">Classic Irish coffees are made with just four ingredients: hot coffee, Irish whiskey, sugar and whipped cream.</p>
+                <p class="price">$11.4</p>
+                <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+            </div>
+            <div class="coffee">
+                <img src="image/latte.jpg" alt="latte">
+                <h1>Latte</h1>
+                <p class="description">Latte is the popular drink consists of espresso, steamed milk and a thin layer of milk foam. </p>
+                <p class="price">$15.0</p>
+                <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+            </div>
+            <div class="coffee">
+                <img src="image/Affogato.jpg" alt="afffogato">
+                <h3>Affogato</h3>
+                <p class="description">Affogato is a shot of hot espresso (coffee), ice cream or gelato and optional half a shot of liquor (Frangelico, amaretto, rum).</p>
+                <p class="price">$16.0</p>
+                <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+            </div>
+            <div class="coffee">
+                <img src="image/Flat_white.jpg">
+                <h3>Flat White</h3>
+                <P class="description">A flat white is a coffee drink consisting of espresso and steamed milk.</P>
+                <p class="price">$13.7</p>
+                <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+            </div>
+            <div class="coffee">
+                <img src="image/icedcoffee.png" alt="iced coffee">
+                <h3>Iced Coffee</h3>
+                <p class="description">Iced coffee is coffee brewed hot, then cooled down by ice or refrigerated, usually made in big batches ready for serving.</p>
+                <P class="price">$14.7</P>
+                <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+            </div>
+            <div class="coffee">
+                <img src="image/nescafe.jpg" alt="nes coffee powder">
+                <h3>NESCAFE</h3>
+                <p class="description">A brand of instant coffee sold by the multinational food and drink corporation Nestlé.</p>
+                <p class="price">$30.6</p>
+                <div class="button-container">
+                    <button class="view" onclick="window.location.href='nescafe.html';">View Details</button>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+            </div>
+            <div class="coffee">
+                <img src="image/hazelnut-coffee.jpg" alt="hazelnut-coffee">
+                <h3>Hazelunt Coffee Powder</h3>
+                <p class="description">Hazelnut coffee is nothing new to most coffee drinkers.</p>
+                <P class="price">$28.7</P>
+                <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+            </div>
+            <div class="coffee">
+                <img src="image/jacobs.jpg" alt="jacobs coffee">
+                <h3>Jacobs Coffee Powder</h3>
+                <p class="description">Jacobs has implemented cutting-edge technology to maximize this fragrance in every pack. </p>
+                <p class="price">$38.3</p>
+                <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container text-center">
+                                       
+                <div class="col-12 mb-3">
+                    <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Menu.html">Selection</a></li>
+                            <li><a href="Equipment.html">Equipment</a></li>
+                            <li><a href="Events.html">Events</a></li>
+                            <li><a href="Promotion.html">Special Offers</a></li>
+                    </ul>
+                </div>
+            
+            
+                
+                <div class="col-12 mb-3" id="contact">
+                    <div>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    </div>
+                    <div class="contact-us">
+                        <h4>Contact us</h4>
+                        <p>
+                        Gmail  : beanboutiquecafe@gmail.com<br>
+                        Phone  : 09-55335532<br>
+                        Address: 123 Main Street, Springfield, IL 62701
+                        </p>
+                    </div>
+                </div>           
+            
+            <div class="row">                           
+                <div class="col-12">
+                    <p class="copyright">Copyright ©2024, Bean Boutique Coffee Shop</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

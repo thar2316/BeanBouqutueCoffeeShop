@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="coffee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="image/images.jpg">
+</head>
+<body>
+    <header>
+        <div class="event">
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <img class="logo" src="image/images.jpg" alt="">
+                <figcaption id="figcaption">Bean Boutique<br> Coffee Shop</figcaption>
+                <ul id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Menu.html">Coffee Selection</a></li>
+                    <li><a href="Equipment.html">Brewing Equipment</a></li>
+                    <li><a href="Events.html">Events & Workshops</a></li>
+                    <li><a href="Promotion.html">Special Offers</a></li>
+                    <li><a href="Cart.html">Shopping Cart</a></li>
+                </ul>
+                
+                <div id="searchbox">
+                    <input type="text" id="search" name="search" placeholder="Search..">
+                </div>
+            </nav>
+            <section class="intro-event">
+                <div class="event-content">
+                    <h1>Here</h1>
+                    <p>You can participate :)</p>
+                </div>
+            </section>
+        </div>
+    </header><br>
+    <section class="workshop">
+        <div clss="workshop-grid">
+            <div class="workshop-item">
+                <img src="image/OpenMic.jpg" alt="Open Mic Night">
+                <p><strong>Open Mic Night</strong> <br><br><br><br>Host a night of music, poetry, or stand-up comedy performance by locals. Comically invite patrons to showcase their talents in a friendly atmosphere; free drink for performers. Promote on social media and embed a few from the past performances to get excitement going.</p>
+            </div>
+            <div class="workshop-item">
+                <img src="image/Latte-Art-Workshop-1678671127.jpg" alt="Latte Art Workshop">
+                <p><strong>Latte Art Workshop</strong><br><br><br><br>Offer hands-on workshops where your customers could learn the latte art. Guided by an expert Barista, the trainees will try their hand on making hearts and leaves among other latte art patterns. Showcase some nice pictures of pretty latte creations and the testimonials of participants to entice more attendees.</p>
+            </div>
+            <div class="workshop-item">
+                <img src="image/blog_coffee-pairings-main_header.jpg" alt="Tasting and Pairing of Coffee">
+                <p><strong>Tasting and Pairing of Coffee</strong><br><br><br><br>Organize a tasting session with various coffee beans from around the world. Pair each type with complementary treats like pastries or cheeses, and explain the unique flavors. Share tasting notes and bean origins on social media to entice coffee enthusiasts.</p>
+            </div>
+            <div class="workshop-item">
+                <img src="image/bookclub.jpg" alt="Book Club Gathering">
+                <p><strong>Book Club Gathering</strong><br><br><br><br>Start a monthly book club, selecting a new book each month and meeting to discuss it over coffee. Partner with a local bookstore for book discounts and post a reading list and discussion schedule. Capture book club highlights to encourage new members to join.</p>
+            </div>
+            
+        </div>
+    </section>
+    <section class="form">
+        <h2>Enjoy Now</h2>
+            <form id="eventForm" action="mailto:luffy123@gmail.com">
+                <label for="name1">First Name:</label>
+                <input type="text" id="name1" name="firstname" required>
+
+                <label for="name1">Last Name:</label>
+                <input type="text" id="name2" name="lastname" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="event">Select Event:</label>
+                <select id="event" name="event">
+                    <option value="Open Mic Night">Open Mic Night</option>
+                    <option value="Latte Art Workshop">Latte Art Workshop</option>
+                    <option value="Tasting and Pairing of Coffee">Tasting and Pairing of Coffee</option>
+                    <option value="Book Club Gathering">Book Club Gathering</option>
+                </select>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any special requests or comments?"></textarea>
+                
+                <button type="submit" class="signup-button">Sign Up</button>
+            </form>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+                                       
+                <div class="col-12 mb-3">
+                    <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Menu.html">Selection</a></li>
+                            <li><a href="Equipment.html">Equipment</a></li>
+                            <li><a href="Events.html">Events</a></li>
+                            <li><a href="Promotion.html">Special Offers</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 mb-3" id="contact">
+                    <div>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    </div>
+                    <div class="contact-us">
+                        <h4>Contact us</h4>
+                        <p>
+                        Gmail  : beanboutiquecafe@gmail.com<br>
+                        Phone  : 09-55335532<br>
+                        Address: 123 Main Street, Springfield, IL 62701
+                        </p>
+                    </div>
+                </div>           
+            
+            <div class="row">                           
+                <div class="col-12">
+                    <p class="copyright">Copyright ©2024, Bean Boutique Coffee Shop</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

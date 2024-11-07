@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="coffee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="image/images.jpg">
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                    <ul id="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Menu.html">Coffee Selection</a></li>
+                        <li><a href="Equipment.html">Brewing Equipment</a></li>
+                        <li><a href="Events.html">Events & Workshops</a></li>
+                        <li><a href="Promotion.html">Special Offers</a></li>
+                        <li><a href="Cart.html">Shopping Cart</a></li>
+                    </ul>
+                
+                    <div id="searchbox">
+                        <input type="text" id="search" name="search" placeholder="Search..">
+                    </div>
+                </nav>
+            </div>
+        </header>
+    
+        <section>
+            <div class="cart-container">
+    
+                <div class="cart-item">
+                    <img src="image/Cappuccino.jpg" alt="Cappuccino">
+                    <section class="item-details">
+                        <h2>Cappuccino</h2>
+                        <p>$13.0</p>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </section>
+                </div>
+        
+                <div class="cart-item">
+                    <img src="image/americano.png" alt="Americano">
+                    <section class="item-details">
+                        <h2>Americano</h2>
+                        <p>$13.2</p>
+                        <label for="quantity2">Quantity:</label>
+                        <input type="number" id="quantity2" name="quantity" min="1" value="1">
+                    </section>
+                </div>
+                
+                <div class="cart-item">
+                    <img src="image/nescafe.jpg" alt="NESCAFE">
+                    <section class="item-details">
+                        <h2>NESCAFE</h2>
+                        <p>$30.6</p>
+                        <label for="quantity3">Quantity:</label>
+                        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+                    </section>
+                </div>
+    
+                <div class="cart-item">
+                    <img src="image/hazelnut-coffee.jpg" alt="Hazelunt Coffee Powder">
+                    <section class="item-details">
+                        <h2>Hazelunt Coffee Powder</h2>
+                        <p>$28.7</p>
+                        <label for="quantity4">Quantity:</label>
+                        <input type="number" id="quantity4" name="quantity" min="1" value="1">
+                    </section>
+                </div>
+                <div class="cart-item">
+                    <img src="image/485WHT-Hero-TransparentBG-Wirecutter-2024.avif" alt="Encore™">
+                    <section class="item-details">
+                        <h2>Encore™</h2>
+                        <p>$365.00</p>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </section>
+                </div>
+                <div class="cart-item">
+                    <img src="image/Sette™ 30.avif" alt="Sette™ 30">
+                    <section class="item-details">
+                        <h2>Sette™ 30</h2>
+                        <p>$399.00</p>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </section>
+                </div>
+               
+            </div>
+        </section>
+    
+        <section class="cart-summary">
+                <h5>Total: $556.45</h5>
+                <button type="button">Buy Now</button>
+        </section>
+        <footer class="footer">
+            <div class="container text-center">
+                                           
+                    <div class="col-12 mb-3">
+                        <ul class="footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="Menu.html">Selection</a></li>
+                                <li><a href="Equipment.html">Equipment</a></li>
+                                <li><a href="Events.html">Events</a></li>
+                                <li><a href="Promotion.html">Special Offers</a></li>
+                        </ul>
+                    </div>
+                
+                
+                    
+                    <div class="col-12 mb-3" id="contact">
+                        <div>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                        </div>
+                        <div class="contact-us">
+                            <h4>Contact us</h4>
+                            <p>
+                            Gmail  : beanboutiquecafe@gmail.com<br>
+                            Phone  : 09-55335532<br>
+                            Address: 123 Main Street, Springfield, IL 62701
+                            </p>
+                        </div>
+                    </div>           
+                
+                <div class="row">                           
+                    <div class="col-12">
+                        <p class="copyright">Copyright ©2024, Bean Boutique Coffee Shop</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</main>
+</body>
+</html>

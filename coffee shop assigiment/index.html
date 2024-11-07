@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="coffee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="image/images.jpg">
+    <script src="popupbox.js"></script>
+</head>
+<body>
+    <header>
+        <div class="home">
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <img class="logo" src="image/images.jpg" alt="">
+                <figcaption id="figcaption">Bean Boutique<br> Coffee Shop</figcaption>
+                <ul id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Menu.html">Coffee Selection</a></li>
+                    <li><a href="Equipment.html">Brewing Equipment</a></li>
+                    <li><a href="Events.html">Events & Workshops</a></li>
+                    <li><a href="Promotion.html">Special Offers</a></li>
+                    <li><a href="Cart.html">Shopping Cart</a></li>
+                </ul>
+                
+                <div id="searchbox">
+                    <input type="text" id="search" name="search" placeholder="Search..">
+                </div>
+            </nav>
+            <section class="intro">
+                <div class="intro-content">
+                    <h1>Welcome to Our Bean Boutique</h1>
+                    <p>We start each day with the single goal of satisfying customers and always getting the Best Coffee</p>
+                </div>
+            </section>
+        </div>
+    </header><br>
+    <section class="health-benefit">
+        <div class="outside">
+            <div class="inside">
+                <img src="image/The-Health-Benefits-of-Drinking-Coffee.jpg" alt="Health benefits of coffee drinking" id="healthphoto">
+                <div class="benefits-content">
+                    <h1>Health Benefits of Coffee Drinking</h1>
+                    <p>
+                        Coffee Protects Against Depression.<br>
+                        Coffee Contains Antioxidants.<br>
+                        Coffee May Reduce the Risk of Type 2 Diabetes.<br>
+                        Coffee Is Tied to Lower Rates of Other Diseases.<br>
+                        Coffee May Give Your Workout a Boost.<br>
+                        Coffee May Protect Against Dementia.<br>
+                        Decaf Coffee Can Also Offer Benefits.<br>
+                        Potential Dehydration.
+                    <p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="best-selling">
+        <div class="outside">
+            <div class="intro-selling">
+                <h3>Best Selling Items</h3>
+                <p class="intro">If you want more click <a href="menu.html">Coffee Selection</a> and see other types of coffee.</p>
+            </div>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="image/black-coffee.jpg" alt="Black-coffee" id="black-coffee">
+                    <h3>Black Coffee</h3>
+                    <p class="description">Black coffee is a popular hot coffee drink consisting of ground coffee and water and can be prepared using different brewing methods.</p>
+                    <p class="price">$10.5</p>
+                    <div class="button-container">
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                
+                </div>
+                    <div class="product">
+                    <img src="image/Cappuccino.jpg" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p class="description">A cappuccino is the perfect balance of espresso, steamed milk and foam.</p>
+                    <p class="price">$13.0</p>
+                    <div class="button-container">
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                </div>
+                    <div class="product">
+                    <img src="image/irish-coffee.jpg" alt="Irish Coffee">
+                    <h3>Irish Coffee</h3>
+                    <p class="description">Classic Irish coffees are made with just four ingredients: hot coffee, Irish whiskey, sugar and whipped cream.</p>
+                    <p class="price">$11.4</p>
+                    <div class="button-container">
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="dealPopup" class="deal-popup">
+            <div class="deal-popup-content">
+                <span class="deal-close-btn" onclick="closeDeal()">&times;</span>
+                <h2>Special Offer Just for You!</h2>
+                <p>Enjoy Buy One Get One Free on your first order and subscription!</p>
+                <button class="deal-btn order-btn" onclick="startOrder()">Order Now</button>
+                <button class="deal-btn subscribe-btn" onclick="startSubscribe()">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+                                       
+                <div class="col-12 mb-3">
+                    <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Menu.html">Selection</a></li>
+                            <li><a href="Equipment.html">Equipment</a></li>
+                            <li><a href="Events.html">Events</a></li>
+                            <li><a href="Promotion.html">Special Offers</a></li>
+                    </ul>
+                </div>
+            
+            
+                
+                <div class="col-12 mb-3" id="contact">
+                    <div>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    </div>
+                    <div class="contact-us">
+                        <h4>Contact us</h4>
+                        <p>
+                        Gmail  : beanboutiquecafe@gmail.com<br>
+                        Phone  : 09-55335532<br>
+                        Address: 123 Main Street, Springfield, IL 62701
+                        </p>
+                    </div>
+                </div>           
+            
+            <div class="row">                           
+                <div class="col-12">
+                    <p class="copyright">Copyright ©2024, Bean Boutique Coffee Shop</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

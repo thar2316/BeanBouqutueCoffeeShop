@@ -1,0 +1,1298 @@
+/*for home page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:"Radio Canada Big", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:skyblue;
+}
+.deal-popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    backdrop-filter: blur(2px); 
+}
+
+.deal-popup-content {
+    background-color: #fefefe;
+    color: #333;
+    margin: 12% auto;
+    padding: 25px;
+    border-radius: 15px;
+    width: 70%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border: 2px solid #6b4f4f;
+}
+
+.deal-close-btn {
+    color: #6b4f4f;
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+
+}
+
+.deal-close-btn:hover,
+.deal-close-btn:focus {
+    color: #d1930a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.deal-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 10px auto;
+    width: 60%;
+}
+
+.deal-btn:hover {
+    background-color: #7b6855;
+}
+
+.order-btn {
+    background-color: #7b6855;
+}
+
+.order-btn:hover {
+    background-color: #3c3c3c;
+}
+
+.subscribe-btn {
+    background-color: #7b6855;
+}
+
+.subscribe-btn:hover {
+    background-color: #3c3c3c;
+}
+
+@media (max-width: 780px) {
+    .deal-popup-content {
+        width: 90%; 
+        margin: 20% auto; 
+        padding: 15px; 
+    }
+
+    .deal-btn,
+    .order-btn,
+    .subscribe-btn {
+        width: 80%; 
+        font-size: 16px; 
+        padding: 12px 20px; 
+    }
+    
+    .deal-close-btn {
+        font-size: 22px; 
+    }
+}
+.logo   
+{
+    width: 150px;
+    height: 100px;
+}
+.figcaption{
+    color:#256fd0;
+    text-align:justify;
+    padding-left: 4px;
+
+}
+header .home{
+    color:white;
+    background: url('image/coffeeshop.jpg') no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(123, 104, 85, 0.65);
+    z-index: 1000;
+    padding: 7px 20px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; 
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #fde3c6;
+}
+
+#searchbox {
+    display: flex;
+    align-items: center; 
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: 10px; 
+}
+
+#searchbox input[type="text"] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid Silver;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url('image/img/search.png');
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+    padding: 8px 10px 8px 30px;
+    transition: width 0.4s ease-in-out;
+    height: 32px;
+}
+
+#searchbox input[type="text"]:focus {
+    width: 300px;
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+    margin-right: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    #nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8); 
+        position: absolute;
+        top: 60px;
+        width: 350px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #nav-list.show {
+        display: flex; 
+    }
+
+    #searchbox.hide {
+        display: none; 
+    }
+
+    #searchbox input[type="text"] {
+        width: 60%; 
+        max-width: 150px; 
+        padding: 8px 10px 8px 30px; 
+        font-size: 12px; 
+        height: 28px; 
+        box-sizing: border-box;
+    }
+
+    #searchbox input[type="text"]:focus {
+        width: 70%; 
+        max-width: 160px; 
+    }
+}
+
+
+.footer {
+    margin-top: 3em;
+    background-color: #125b83; 
+    color: #333; 
+    padding: 20px 0; 
+    position: relative;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+#contact{
+    display:grid;
+    grid-template-columns: repeat(2,0.4fr);
+    margin-top: 30px;
+}
+#contact contact-us{
+    color:black;
+    margin-top: 4em;
+    text-align: center;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links li a {
+    color: #e6e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #aaa; 
+}
+
+.copyright {
+    margin: 10px 0 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.social-icons li a {
+    color: #fff;
+    background-color: #720db1;
+    width: 40px;      
+    height: 40px;      
+    display: flex;    
+    justify-content: center; 
+    align-items: center;  
+    border-radius: 50%; 
+    font-size: 20px;    
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons li a:hover {
+    background-color: #555; 
+}
+@media (max-width: 780px) {
+    .footer {
+        padding: 15px 0; 
+    }
+
+    .social-icons,
+    .footer-links {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .social-icons li,
+    .footer-links li {
+        margin: 5px; 
+    }
+
+    .social-icons li a {
+        width: 35px; 
+        height: 35px; 
+        font-size: 18px; 
+    }
+
+    .footer-links li a {
+        margin: 0 10px; 
+        font-size: 0.9em; 
+    }
+
+    .copyright {
+        font-size: 0.7em; 
+        margin: 10px 0 0; 
+    }
+}
+.intro {
+    color: white;
+    padding: 15em 2em;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.intro-content {
+    position: relative;
+    z-index: 1;
+}
+
+.intro-content p{
+    letter-spacing: 2px;
+    font-style: inherit;
+    color: #fff;
+    font-size: 3em;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgb(37, 36, 36), 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+.intro-content h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+    
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+
+    .intro {
+        padding: 15em 2em; 
+        background-size: cover; 
+        background-position: center; 
+    }
+
+    .intro-content p {
+        font-size: 1.5em; 
+      
+        text-shadow: 1px 1px 2px rgb(37, 36, 36), 0 0 15px rgb(12, 12, 56), 0 0 3px rgb(133, 96, 53); 
+    }
+
+    .intro-content h1 {
+        font-size: 5em; 
+        margin-top: 200px; 
+        margin-bottom: 5px; 
+        text-shadow: 1px 1px 2px black, 0 0 15px rgb(12, 12, 56), 0 0 3px rgb(133, 96, 53); 
+    }
+}
+.outside {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.inside {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr; 
+    gap: 0; 
+    align-items: center;
+    border-radius: 10px; 
+    background-color:#fff; 
+    box-shadow: 0 2px 4px rgba(1, 1, 1, 0.1);
+    max-width: 1500px; 
+    width: 100%; 
+    overflow: hidden; 
+}
+#healthphoto{
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    padding: 10px 10px 10px 10px;
+}
+.benefits-content {
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%; 
+}
+
+.benefits-content h3 {
+    font-size: 2em; 
+    margin: 0 0 10px;
+    color:#333; 
+}
+
+.benefits-content p {
+    font-size: 1em; 
+    line-height: 2; 
+    color: #333; 
+    margin: 0;
+    text-align: justify;
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+
+    .outside {
+        margin-top: 30px; 
+        flex-direction: column; 
+    }
+
+    .inside {
+        grid-template-columns: 1fr; 
+        max-width: 100%; 
+        border-radius: 5px; 
+    }
+
+    #healthphoto {
+        height: 200px; 
+        border-radius: 5px; 
+        padding: 5px; 
+    }
+
+    .benefits-content {
+        padding: 15px; 
+    }
+
+    .benefits-content h2 {
+        font-size: 1.5em; 
+        margin: 0 0 10px; 
+    }
+
+    .benefits-content p {
+        font-size: 0.9em; 
+        line-height: 1.6; 
+        margin: 0; 
+        text-align: justify; 
+    }
+}
+.best-selling {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.best-selling h3 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.best-selling p.intro {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+.intro-selling a:link{
+    text-decoration: none;
+    color: #80916d;
+}
+
+.intro-selling a:visited{
+    color:#80916d;
+    text-decoration: none;
+}
+
+.intro-selling a:hover{
+    color:#d1930a ;
+}
+.product-section {
+    padding: 20px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    background-color: #256fd0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.product img {
+    width: 100%;
+    height: 320px; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 12px 0;
+    font-size: 20px;
+    color: black;
+}
+
+.product p {
+    margin: 8px 0;
+    color: #333;
+    flex-grow: 1; 
+}
+
+.product .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: goldenrod;
+    margin-bottom: 12px;
+}
+
+.product .description{
+    text-align: center;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #7b6855;
+    color:#fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+    margin-top: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.product button:hover {
+    background-color: #80916d;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 780px) {
+    .product-grid {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    .product {
+        padding: 12px; 
+        height: auto; 
+    }
+
+    .product img {
+        height: 450px;
+        width: 100%;
+    }
+
+    .product h3 {
+        font-size: 18px;
+    }
+
+    .product p {
+        font-size: 14px; 
+    }
+
+    .product .price {
+        font-size: 14px; 
+    }
+
+    .product button {
+        padding: 8px 16px; 
+        font-size: 14px; 
+    }
+
+    .button-container {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+}
+/*for coffee selection*/
+header .menu{
+    background: url('image/Coffee-Shop-1024x576.jpg') no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+.intro-menu {
+    color: white;
+    padding: 15em 2em;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.intro-menucontent {
+    position: relative;
+    z-index: 1;
+}
+.intro-menucontent h1{
+    font-size: 5emem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+.intro-menucontent p{
+    letter-spacing: 2px;
+    font-style: inherit;
+    color: #fff;
+    font-size: 3em;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgb(37, 36, 36), 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .intro-menu {
+        padding: 4em 1em; 
+    }
+
+    .coffee-menu p {
+        font-size: 1.5em; 
+        letter-spacing: 1px; 
+    }
+
+    .coffee-menu h1 {
+        font-size: 3em; 
+        letter-spacing: 2px;
+        margin-top: 300px;
+    }
+}
+.coffee-section {
+    padding: 20px;
+}
+.coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.coffee {
+    background-color: #4084dc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.coffee img {
+    width: 100%;
+    height: 320px; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.coffee h3 {
+    margin: 12px 0;
+    font-size: 20px;
+    color: black;
+}
+
+.coffee p {
+    margin: 8px 0;
+    color: #333;
+    flex-grow: 1; 
+}
+
+.coffee .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: goldenrod;
+    margin-bottom: 12px;
+}
+
+.coffee .description{
+    text-align: center;
+}
+
+.coffee button {
+    padding: 10px 20px;
+    background-color: #7b6855;
+    color:#fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+    margin-top: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.coffee button:hover {
+    background-color: #122a88;
+}
+
+.coffee:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 780px) {
+    .coffee-grid {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    .coffee {
+        padding: 12px; 
+        height: auto; 
+    }
+
+    .coffee img {
+        height: 450px;
+        width: 100%;
+    }
+
+    .coffee h3 {
+        font-size: 18px;
+    }
+
+    .coffee p {
+        font-size: 14px; 
+    }
+
+    .coffee .price {
+        font-size: 14px; 
+    }
+
+    .coffee button {
+        padding: 8px 16px; 
+        font-size: 14px; 
+    }
+
+    .button-container {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+}
+/*for equipment page*/
+header .equipment {
+    background: url('image/coffee-machines-brewing-hot-coffee-with-steam-rising-concept-coffee-machines-brewing-hot-coffee-steam-rising-espresso-makers-coffee-brewing-techniques_918839-4478.avif') no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+.intro-equipment {
+    color: white;
+    padding: 15em 2em;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.equipment-content {
+    position: relative;
+    z-index: 1;
+}
+.equipment-content h1{
+    font-size: 5emem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+.equipment-content p{
+    letter-spacing: 2px;
+    font-style: inherit;
+    color: #fff;
+    font-size: 3em;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgb(37, 36, 36), 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .intro-menu {
+        padding: 4em 1em; 
+    }
+
+    .coffee-menu p {
+        font-size: 1.5em; 
+        letter-spacing: 1px; 
+    }
+
+    .coffee-menu h1 {
+        font-size: 3em; 
+        letter-spacing: 2px;
+        margin-top: 300px;
+    }
+}
+
+/*for event and workshop*/
+header .event{
+    background: url('image/events-and-workshop.jpg') no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    height: 85vh;
+}
+
+.intro-event {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 8em 1em; 
+}
+
+.event-content {
+    z-index: 1;
+    position: relative;
+}
+
+.event-content h1 {
+    color: white;
+    font-size: 5em;
+    margin-bottom: 0.5em;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.event-content p{
+    color: white;
+    font-size: 2.5em;
+    font-style: inherit;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .event-content h1{
+        margin-top: 150px;
+        font-size: 3em;
+     }
+
+    .event-content p{
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    }
+
+    .intro-event{
+         padding: 4em 1em;
+    }
+}
+.workshop {
+    padding:20px;
+}
+.workshop-grid {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:5rem;
+    padding:2rem;
+}
+.workshop-item {
+    display:flex;
+    background-color: #455fca;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 5px;
+    margin-bottom: 2rem;
+    gap:5rem;
+    border-radius: 4px;
+}
+.workshop-item img {
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.workshop-item p {
+    color:#333;
+    font-size: 1.5rem;
+}
+.form {
+    padding: 2rem;
+    text-align: center;
+}
+
+.form h2 {
+    color: #6b4f4f;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left:5rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+ button {
+    background-color: #5242ad;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+ button:hover {
+    background-color: darkblue;
+}
+header .promotion {
+    background: url('image/the-psychology-of-coffee-shops-511448.webp') no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+.intro-promotion {
+    color: white;
+    padding: 8em 1em;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.promotion {
+    position: relative;
+    z-index: 1;
+}
+
+.promotion p{
+    letter-spacing: 2px;
+    font-style: inherit;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+.promotion h1 {
+    font-size: 5em;
+    margin-bottom: 0.5em;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .intro-promotion {
+        padding: 4em 1em; 
+    }
+
+    .promotion h1 {
+        font-size: 3em; 
+        margin-top: 150px; 
+    }
+
+    .promotion p {
+        font-size: 1.5em; 
+        letter-spacing: 1px; 
+    }
+}
+.promotion-section {
+    padding:20px;
+}
+.promotion-section h2 {
+    color:black;
+    margin-bottom: 5px;
+    padding:0;
+    margin-left: 400px;
+}
+.special-promotion, .subscription {
+    background-color: #5567ad;
+    padding:20px;
+    border-radius: 5px;
+    margin-left:400px;
+    margin-right: 400px;
+    margin-bottom: 1em;
+}
+.special-promotion ul{
+    list-style: none;
+    padding:10px;
+}
+.special-promotion ul li{
+    background: url('image/coffee-cup-logo.jpg') no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.subscription p {
+    font-size: 1.5em;
+    padding-top: 10px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.subscription ul{
+    list-style: none;
+    padding:10px;
+}
+.subscription ul li {
+    background: url('image/coffee-cup-logo.jpg') no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.subscribe {
+    margin-left: 26rem;
+}
+/*For shopping cart*/
+
+.cart-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    background-color: skyblue;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.cart-item {
+    background-color: #4a46c7;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.cart-item img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details h2 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+}
+
+.item-details p {
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.cart-summary {
+    margin-top: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.cart-summary h5 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 700px;
+}
+
+.cart-summary button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 700px;
+}
+
+.cart-summary button:hover {
+    background-color: #1d05d3
+}
+
+@media (max-width: 768px) {
+    .cart-container {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+    }
+
+    .cart-item {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .cart-item img {
+        width: 100%; 
+        height: auto; 
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .cart-summary {
+        text-align: left;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .item-details h2 {
+        font-size: 1.2em; 
+    }
+
+    .item-details p {
+        font-size: 0.9em; 
+    }
+
+    .cart-summary p {
+        font-size: 0.9em; 
+    }
+
+    .cart-summary button {
+        padding: 8px 8px;
+    }
+}
+/*for viewdetail page*/
+
+.detail {
+    max-width: 1000px;
+    margin: 150px auto 100px auto;
+    padding: 20px;
+    background-color: rgb(77, 102, 186);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.Encore™ img {
+    width: 90%;
+    height: 350px;
+    border-radius: 8px;
+    justify-self: center;
+}
+
+.Encore™ h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.Encore™ ul {
+    padding-left: 20px;
+    margin: 4px;
+    font-size: 1.1rem;
+    list-style-type: disc;
+}
+
+.Encore™ ul li {
+    padding: 5px 0;
+    text-align: left;
+}
+
+.Encore™ button {
+    background-color: #3c3c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.Encore™ button:hover {
+    background-color: #2525ad;
+}
+
+.Encore™ button a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .detail {
+        grid-template-columns: 1fr; 
+        margin: 100px auto 20px auto; 
+        padding: 10px;
+    }
+
+    .Encore™ img {
+        max-width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .Encore™ h3 {
+        font-size: 1.5rem;
+    }
+
+    .Encore™ ul {
+        font-size: 1rem; 
+    }
+
+    .Encore™ button {
+        font-size: 1rem; 
+        padding: 8px 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .Encore™ h3 {
+        font-size: 1.2rem; 
+    }
+
+    .Encore™ ul {
+        font-size: 0.9rem; 
+    }
+
+    .Encore™ button {
+        font-size: 0.9rem; 
+        padding: 6px 12px; 
+    }
+}
